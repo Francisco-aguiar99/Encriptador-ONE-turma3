@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #e5e5e5;
+    background-color: #687896;
 
 }
 header {
@@ -15,8 +15,9 @@ header {
 }
 main {
     display: flex;
-    margin-left: 80px;
-    margin-bottom: 50px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .input-texto {
@@ -25,20 +26,17 @@ main {
 }
 
 .mensagem {
-    position: fixed;
-    margin-top: 20px;
-    margin-left: 50px;
-    background-image: url("/imagens/qualiti.png");
-    background-repeat: no-repeat;
-    background-position: 18px;
-    background-size: 300px;
-    border-radius: 45px;
+    
+    width: auto;
+    color: rgb(61, 0, 60);
+    margin-top: 10px;
+    border-radius: 10px;
+
 }
 
-.copiar {
+.copia {
     position:relative;
-    margin-top: 330px;
-    margin-left: 205px;
+    margin: 30px;
     border-radius: 10px;
 }
 
@@ -50,7 +48,7 @@ main {
 }
 
 .encriptar {
-    background-color: #10002b;
+    background-color: #1e0e3c;
     color: #ffffff;
     margin: 30px;
     border-radius: 10px;
@@ -64,9 +62,15 @@ main {
 
 .informacao {
     font-size: 20px;
-    background-color: #10002b;
+    background-color: #1e0e3c;
     color: #ffffff;
     display: inline-block;
-    border-radius: 10px;
+    border-radius:5px;
 
+}
+
+@media screen and (max-width: 480px){
+    .input-texto,  .mensagem, .botoes {
+       width: auto;
+    }
 }
