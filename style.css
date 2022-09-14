@@ -10,52 +10,68 @@ body {
     background-color: #687896;
 
 }
+
 header {
     margin: 40px;
 }
+
+
 main {
     display: flex;
     margin-left: 5px;
     margin-bottom: 10px;
     text-align: center;
+    justify-content: center;
+
 }
+
 
 .input-texto {
     margin-top: 90px, 25px;
     border-radius: 10px;
+
 }
 
 .mensagem {
-    
+
     width: auto;
     color: rgb(61, 0, 60);
     margin-top: 10px;
     border-radius: 10px;
+    width: 25px 75%;
 
 }
 
 .copia {
-    position:relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
     margin: 30px;
     border-radius: 10px;
 }
 
 .botoes {
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 5px;
+    padding: 5px;
     border-radius: 10px;
 }
 
 .encriptar {
+    display: flex;
+    justify-content: center;
     background-color: #1e0e3c;
     color: #ffffff;
     margin: 30px;
     border-radius: 10px;
-    
+
 }
 
 .desencriptar {
+    display: flex;
+    justify-content: center;
     margin: 30px;
     border-radius: 10px;
 }
@@ -65,12 +81,31 @@ main {
     background-color: #1e0e3c;
     color: #ffffff;
     display: inline-block;
-    border-radius:5px;
+    border-radius: 5px;
 
 }
 
-@media screen and (max-width: 480px){
-    .input-texto,  .mensagem, .botoes {
-       width: auto;
+@media screen and (max-width: 480px) {
+
+
+    .input-texto,
+    .mensagem
+     {
+        width: auto;
     }
+    .copia, .encriptar, .desencriptar   {
+        margin: 5px;
+    }
+    .botoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
 }
